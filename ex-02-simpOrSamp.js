@@ -13,7 +13,21 @@
 // }
 //
 
+var simpOrSamp = function (arrOfStrings) {
+  var newArray = []
 
+
+  for ( var i = 0; i < arrOfStrings.length; i++ ) {
+
+    if (arrOfStrings[i].length < 6) {
+      newArray.push(arrOfStrings[i] + ' Sampson');
+    } else if (arrOfStrings[i].length >= 6) {
+      newArray.push(arrOfStrings[i] + ' Simpson');
+    }
+
+  }
+  return newArray;
+}
 
 
 
